@@ -1,31 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace KnowledgeCheck1_Calculator
-{
+
     public class Calculator
     {
-        public int Add(int first, int second)
+        public double Add(double a, double b )
         {
-            return first + second;
+            return a + b;
         }
 
-        public int Subtract(int first, int second)
+        public double Subtract(double a, double b )
         {
-            return first - second;
+            return a - b;
         }
-
-        public int Multiply(int first, int second)
-        {
-            throw new NotImplementedException();
-        }
-
-        public double Divide(double first, double second)
-        {
-            return first / second;
-        }
+    public double Divide(double a, double b)
+    {
+        if (b == 0)
+            {
+                throw new DivideByZeroException("Cannot divide by zero");
+            }
+   
+                return a / b;
     }
+
+public double Multiply(double a, double b)
+{
+    return a * b;
+
 }
+    }
+
